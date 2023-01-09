@@ -37,6 +37,7 @@ Caso 2:
 
 Projeto resposavel por contar quantidade de boundbox existentes para o treinamento.
 Observar:
+
     _DIR_TXT_IMAGEM     ==> Diretório onde estão as imagens e os respectivos recortes ".txt"
     _CLASSES            ==> Diretório onde está a lista de classes consideradas ao treinamento
     QTDE_MIN_POR_LABEL  ==> Quantidade minima de recortes por cada classe
@@ -52,6 +53,7 @@ Percorre todas as pastas num diretório.
 Embaralha (suffle) as imagens antes de separar.
 Move as imagens recortadas para treinamento e validação (img e txt). 
 Observar:
+
     _DIR_FOLDERS        ==> Diretório onde ficam todas os arquivos de treinamento
     _files_to_ignore    ==> Lista de arquivos para ignorar no momento de mover
     _folders_to_move    ==> Pasta para treinamento e validação
@@ -67,6 +69,7 @@ Observar:
 Renomeia arquivos com padrão definido.
 Mantem arquivos num tamanho maximo de caracterres.
 Observar:
+
     _DIR_FILES              ==> Diretório onde ficam todas os arquivos de treinamento
     _NOME_INICIAL           = Nome inicial padrão para todos os arquivos encontrados 
     _TAMANHO_MAX_FILENAME   = Tamanho máximo do nome do arquivo
