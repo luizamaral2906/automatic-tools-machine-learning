@@ -66,7 +66,8 @@ Move as imagens recortadas para treinamento e validação (img e txt).
 
 Renomeia arquivos com padrão definido.
 Mantem arquivos num tamanho maximo de caracterres.
-_DIR_FILES              ==> Diretório onde ficam todas os arquivos de treinamento
-_NOME_INICIAL           = Nome inicial padrão para todos os arquivos encontrados 
-_TAMANHO_MAX_FILENAME   = Tamanho máximo do nome do arquivo
-_files_to_ignone        ==> Lista de arquivos para ignorar no momento de mover
+    Observar:
+        _DIR_FILES              ==> Diretório onde ficam todas os arquivos de treinamento
+        _NOME_INICIAL           = Nome inicial padrão para todos os arquivos encontrados 
+        _TAMANHO_MAX_FILENAME   = Tamanho máximo do nome do arquivo
+        _files_to_ignone        ==> Lista de arquivos para ignorar no momento de mover
