@@ -9,11 +9,11 @@ import sys
 from PIL import Image
 
 root    = os.path.dirname(os.path.abspath(__file__))
-#Modelo com 70% das marcas com placas e tipo (caminhão/passeio)
-modelo  = 'yolov4-obj-tiny-luiz-amaral-46-classes_last'
+#Modelo com 70% dos tipos de carne
+#modelo  = 'yolov4-obj-tiny-4-classes-meat'
 
 #modelo treinado para triagem
-#modelo  = 'yolo'
+modelo  = 'yolo'
 
 # load the customized class labels our YOLO model was trained on
 with open(root + '/' + modelo + '.names', 'rt') as f:
@@ -27,9 +27,9 @@ confid      = 0.1
 threshold   = 0.3
 image_size  = (416, 416)
 
-# load our YOLO object detector trained on custom dataset (5 classes)
+# load our YOLO object detector trained on custom dataset
 print('---------------------------------------------------------------------')
-print('---------- CARREGANDO YOLOV4 - Localizador de Placas ----------------')
+print('---------- CARREGANDO YOLOV4 - Localizador de Objetos ----------------')
 weightsPath = root + '/' + modelo + '.weights'
 configPath = root + '/' + modelo + '.cfg'
 
@@ -100,7 +100,7 @@ async def localizar_objetos(image):
     tempo = round((time.time() - ini) * 1000, 2)
 
     retorno =   {
-                    'modelo': "yolov4_plates_only_v3_tiny",
+                    'modelo': "yolov4_tiny",
                     'redimensionamento': image_size,
                     'tempo_inferencia_ms': tempo,
                     'objetos_detectados': objetos_detectados,
